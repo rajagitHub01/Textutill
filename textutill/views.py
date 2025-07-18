@@ -67,16 +67,3 @@ def analyze(request):
     if(removepunc != 'on' and upper_case != 'on' and newlineremover != 'on' and remove_extra_space != 'on' and char_count != 'on'):
         return HttpResponse("<h1>Please select any operation and try again<h1>")
     return render(request, 'analyze.html', params)
-
-
-
-def capitalizefirst(request):
-    return HttpResponse('''capitalizefirst <br> <br> <button onclick = "history.back()" style = "padding: 10px 20px; background-color: #e5d7d4 ; color:black; border-radius: 10px; border: 2px solid black;   ">back</button>''')
-def newlineremove(request):
-    return HttpResponse('''newlineremove <br> <br> <button onclick = "history.back()" style = "padding: 10px 20px; background-color: #e5d7d4 ; color:black; border-radius: 10px; border: 2px solid black;   ">back</button>''')
-def spaceremove(request):
-    return HttpResponse('''spaceremove <br> <br> <button onclick = "history.back()" style = "padding: 10px 20px; background-color: #e5d7d4 ; color:black; border-radius: 10px; border: 2px solid black;   ">back</button>''')
-def charcount(request):
-    return HttpResponse('''charcount <br> <br> <button onclick = "history.back()" style = "padding: 10px 20px; background-color: #e5d7d4 ; color:black; border-radius: 10px; border: 2px solid black;   ">back</button>''')
-
-
